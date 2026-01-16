@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: australia-southeast1-docker.pkg.dev/corded-bivouac-468301-n3/uqlnf/frontend:v1
+        image: 
         ports: [{ containerPort: 80 }]
         readinessProbe:
           httpGet: { path: /, port: 80 }
