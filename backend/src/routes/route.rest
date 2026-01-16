@@ -1,0 +1,70 @@
+GET http://localhost:3000/reviewItems
+
+###
+
+POST http://localhost:3000/createItems
+Content-Type: application/json
+
+{
+    "name": "Johny Smith",
+    "quantity" : 2,
+    "description" : "Just testing",
+    "found_at" : "Eng Building",
+    "placed_at" : "Front Gate",
+    "photos" : []
+}
+
+###
+
+POST http://localhost:3000/createItems
+Content-Type: application/json
+
+{
+    "name": "Milton Water Bottle",
+    "quantity" : 1,
+    "description" : "Water bottle is empty and there's a bit of rust at the bottom",
+    "found_at" : "UQ Field 9",
+    "placed_at" : "Bench Blue Color",
+    "photos" : []
+}
+
+###
+
+DELETE http://localhost:3000/deleteItems/68f72cb0c6422d4ac3b53ffe
+
+
+### SIGNUP success
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+  "userName": "alice",
+  "password": "secret123"
+}
+
+### SIGNUP missing field (400)
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+  "userName": "alice"
+}
+
+
+### LOGIN success (200)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "userName": "alice",
+  "password": "secret123"
+}
+
+### LOGIN wrong password (401)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "userName": "alice",
+  "password": "badpass"
+}

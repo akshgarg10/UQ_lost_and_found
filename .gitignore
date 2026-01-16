@@ -1,0 +1,31 @@
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Builds
+build/
+dist/
+coverage/
+
+# Env files (keep samples committed)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local tooling
+.pnp
+.pnp.js
+
+# Secrets
+k8s/secret.yaml
+
