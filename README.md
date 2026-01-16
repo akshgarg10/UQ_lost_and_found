@@ -110,6 +110,3 @@ setup (24x7, no credits) was estimated around A$50–120/month depending on load
   validation.
 - Rotate any credentials committed to source control.
 
-## License
-For coursework use. Add a license if publishing publicly.
-
